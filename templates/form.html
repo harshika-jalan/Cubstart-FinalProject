@@ -1,0 +1,42 @@
+<html>
+<head>
+<title> Form</title>
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles.css') }}">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+	<form action="/form" method="POST">
+	<div>
+		<h1 class="card-title">Student details</h1>
+		<form >
+
+		<div class="form-group">
+			<label for="Name">Name</label>
+			<input type="text" name="name" class="form-control" id="formGroupExampleInput2">
+		</div>
+
+
+		<div class="form-group">
+	        <label for="Year">Year</label>
+	       	<input type="number" name="year" min="1" max="4" class="form-control" id="formGroupExampleInput2">
+	   	</div>
+
+
+
+
+		<div class="form-group">
+			<label for="major">Major/Areas of Interest</label>
+			<input type="text" name="major" class="form-control" id="formGroupExampleInput2">
+		</div>
+
+
+
+	  <div class="form-group">
+	    <input type="submit" value="Submit" class="btn btn-primary">
+	  </div>
+
+		</form>
+	</div>
+
+</body>
+</html>

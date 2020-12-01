@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="{{ url_for('static', filename='styles/info_styles.css') }}">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+
+      <script src= "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      
+      <title>{%block title %}{% endblock %}</title>
+  </head>
+  <body>
+    {% block content %}
+    {% endblock %}
+    <main>
+               <div style = "margin: auto; width: 50%; ">
+                <a href="Resouces"><button class="btn btn-lg btn-block btn-primary" id="resources">Resources</button></a>
+                <br/>
+                <a href="Blog"><button class="btn btn-lg btn-block btn-info" id="blog">Blog</button></a>
+                <br/>
+                <button class="btn btn-lg btn-block btn-warning" id="Classes"><a href="index.html">Classes </a></button>
+                <br/>
+
+              </div>
+              <br/>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
